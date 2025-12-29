@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+# Restart mapper so it picks up new operation config
+if systemctl is-active --quiet tedge-mapper-c8y.service; then
+  systemctl restart tedge-mapper-c8y.service || true
+fi
+
+exit 0

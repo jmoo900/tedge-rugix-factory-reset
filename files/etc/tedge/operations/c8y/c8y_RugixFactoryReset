@@ -1,0 +1,7 @@
+# Map Cumulocity operation fragment to the reset script
+
+[exec]
+topic = "c8y/devicecontrol/notifications"
+on_fragment = "c8y_RugixFactoryReset"
+command = "/etc/tedge/operations/rugix_factory_reset"
+skip_status_update = false

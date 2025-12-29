@@ -1,0 +1,29 @@
+name: tedge-rugix-factory-reset
+arch: amd64
+platform: linux
+version: 0.1.0
+section: utils
+priority: optional
+maintainer: "Your Name <you@example.com>"
+description: "thin-edge.io Rugix factory reset operation plugin"
+license: "Apache-2.0"
+
+contents:
+  - src: files/etc/tedge/operations/rugix_factory_reset
+    dst: /etc/tedge/operations/rugix_factory_reset
+    file_info:
+      mode: 0755
+      owner: tedge
+      group: tedge
+
+  - src: files/etc/tedge/operations/c8y/c8y_RugixFactoryReset
+    dst: /etc/tedge/operations/c8y/c8y_RugixFactoryReset
+    file_info:
+      mode: 0644
+      owner: tedge
+      group: tedge
+
+overrides:
+  deb:
+    scripts:
+      postinstall: ./debian/postinst
