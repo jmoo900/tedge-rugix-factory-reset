@@ -23,6 +23,13 @@ contents:
       owner: tedge
       group: tedge
 
+  - src: files/etc/sudoers.d/tedge-rugix-reset
+    dst: /etc/sudoers.d/tedge-rugix-reset
+    file_info:
+      mode: 0440
+      owner: root
+      group: root
+
 overrides:
   deb:
     scripts:

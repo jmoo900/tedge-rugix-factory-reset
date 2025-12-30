@@ -6,4 +6,4 @@ set -e
 echo "Triggering Rugix factory reset via rugix-ctrl state reset" >&2
 
 # If rugix-ctrl is not in PATH, adjust to full path (e.g. /usr/bin/rugix-ctrl)
-rugix-ctrl state reset
+sudo /usr/bin/rugix-ctrl state reset

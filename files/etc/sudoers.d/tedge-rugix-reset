@@ -1,0 +1,1 @@
+tedge ALL=(root) NOPASSWD: /usr/bin/rugix-ctrl state reset
